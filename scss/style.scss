@@ -23,6 +23,7 @@ body {
 .container {
   margin: 0 auto;
   padding: 1rem;
+  max-width: 1440px;
 }
 
 .logo {
@@ -47,6 +48,7 @@ body {
       padding: 0.8em 1.5em;
       margin: 0 auto;
       border-radius: 25px;
+      box-shadow: 0 5px 8px 5px $bg-color;
     }
   }
 }
@@ -60,4 +62,55 @@ body {
 
 .fa-facebook-f {
   padding: 10px 12px;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(../images/bg-desktop.svg);
+    background-position: center top;
+  }
+
+  .container {
+    margin: 2rem auto;
+  }
+  .hero {
+    display: flex;
+    gap: 2rem;
+    .hero__image {
+      width: 50%;
+    }
+
+    .hero__body {
+      text-align: left;
+      width: 35%;
+      align-self: flex-start;
+      .title {
+        font-size: 2.5rem;
+      }
+      .description {
+        margin: 0;
+      }
+      .cta {
+        width: fit-content;
+        margin: 0;
+        padding: 0.8em 3em;
+        display: block;
+        &:hover {
+          background-color: $hover-color;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .social-icons {
+    text-align: right;
+    margin-right: 10rem;
+  }
+
+  .fab:hover {
+    color: $hover-color;
+    border-color: $hover-color;
+    cursor: pointer;
+  }
 }

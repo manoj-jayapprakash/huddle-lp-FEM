@@ -22,6 +22,7 @@ body {
 .container {
   margin: 0 auto;
   padding: 1rem;
+  max-width: 1440px;
 }
 
 .logo {
@@ -51,6 +52,8 @@ body {
   padding: 0.8em 1.5em;
   margin: 0 auto;
   border-radius: 25px;
+  -webkit-box-shadow: 0 5px 8px 5px #674baf;
+          box-shadow: 0 5px 8px 5px #674baf;
 }
 
 .fab {
@@ -62,4 +65,56 @@ body {
 
 .fa-facebook-f {
   padding: 10px 12px;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(../images/bg-desktop.svg);
+    background-position: center top;
+  }
+  .container {
+    margin: 2rem auto;
+  }
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2rem;
+  }
+  .hero .hero__image {
+    width: 50%;
+  }
+  .hero .hero__body {
+    text-align: left;
+    width: 35%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .hero .hero__body .title {
+    font-size: 2.5rem;
+  }
+  .hero .hero__body .description {
+    margin: 0;
+  }
+  .hero .hero__body .cta {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0;
+    padding: 0.8em 3em;
+    display: block;
+  }
+  .hero .hero__body .cta:hover {
+    background-color: #e882e8;
+    color: #ffffff;
+  }
+  .social-icons {
+    text-align: right;
+    margin-right: 10rem;
+  }
+  .fab:hover {
+    color: #e882e8;
+    border-color: #e882e8;
+    cursor: pointer;
+  }
 }
