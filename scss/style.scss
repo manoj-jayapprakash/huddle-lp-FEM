@@ -1,0 +1,141 @@
+@import "config";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  background-image: url("../images/bg-mobile.svg");
+  background-color: $bg-color;
+  background-repeat: no-repeat;
+  width: 100vw;
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+header {
+  img {
+    width: 135px;
+    height: 40px;
+    margin: 30px;
+  }
+}
+
+.image {
+  background-repeat: no-repeat;
+  background-image: url("../images/illustration-mockups.svg");
+  height: 30vh;
+  background-size: contain;
+  margin: 18px 35px;
+}
+
+.content {
+  margin: 35px;
+  text-align: center;
+  color: $primary-color;
+  margin-bottom: 0px;
+
+  h1 {
+    font-family: $font-heading;
+  }
+
+  p {
+    font-family: $font-body;
+    line-height: 1.5;
+    margin: 15px;
+    font-size: 0.9rem;
+  }
+
+  .btn-register {
+    padding: 12px 32px;
+    width: 220px;
+    background-color: $primary-color;
+    border-radius: 25px;
+    color: $bg-color;
+    margin: 20px 0px;
+    border: none;
+    box-shadow: 10px 10px 10px $bg-color;
+  }
+}
+.social-icons {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  i {
+    border: 1px solid $primary-color;
+    padding: 10px 13px;
+    border-radius: 50%;
+    color: $primary-color;
+    margin: 0px 5px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    background-image: url("../images/bg-desktop.svg");
+    display: grid;
+    height: 78vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+    margin: 50px auto;
+    background-size: contain;
+  }
+
+  header {
+    grid-column: span 2;
+  }
+
+  .image,
+  .content {
+    grid-row: span 2;
+  }
+
+  .image {
+    height: auto;
+    background-size: contain;
+    margin: 50px;
+  }
+
+  .content {
+    margin: 80px;
+    margin-left: 0;
+    padding-right: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      font-size: 2.2rem;
+    }
+    p {
+      margin-left: 0px;
+    }
+
+    .btn-register {
+      width: 160px;
+      padding: 14px 32px;
+      box-shadow: 10px 10px 5px $bg-color;
+      font-size: 1rem;
+    }
+
+    .btn-register:hover {
+      background-color: $btn-hover-color;
+      color: $primary-color;
+      cursor: pointer;
+    }
+  }
+  .social-icons {
+    grid-column: span 2;
+    text-align: right;
+    margin-right: 80px;
+    i:hover {
+      color: $btn-hover-color;
+      border-color: $btn-hover-color;
+      cursor: pointer;
+    }
+  }
+}
