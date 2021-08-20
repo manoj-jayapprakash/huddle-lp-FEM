@@ -22,29 +22,23 @@ Users should be able to:
 
 ### Screenshot
 
-![](./Huddle landing page.png)
+![Desktop view](./Huddle.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/manoj-jayapprakash/huddle-lp-FEM
+- Live Site URL: https://mjcreations-huddle-lp-fem.netlify.app/
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
 - SCSS
 
-### What I learned
-
-Started to implement scss.
-
 ## Author
 
 - Frontend Mentor - [@manojmj18](https://www.frontendmentor.io/profile/manojmj18)
-- Twitter - [@manoj_mj18](https://twitter.com/manoj_mj18)

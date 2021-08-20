@@ -43,6 +43,7 @@ body {
     }
     .cta {
       text-decoration: none;
+      color: $bg-color;
       background-color: $primary-color;
       width: 80%;
       padding: 0.8em 1.5em;
@@ -105,6 +106,7 @@ body {
 
   .social-icons {
     text-align: right;
+    margin-top: 5rem;
     margin-right: 10rem;
   }
 

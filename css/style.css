@@ -47,6 +47,7 @@ body {
 
 .hero .hero__body .cta {
   text-decoration: none;
+  color: #674baf;
   background-color: #ffffff;
   width: 80%;
   padding: 0.8em 1.5em;
@@ -110,6 +111,7 @@ body {
   }
   .social-icons {
     text-align: right;
+    margin-top: 5rem;
     margin-right: 10rem;
   }
   .fab:hover {
