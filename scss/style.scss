@@ -1,4 +1,4 @@
-@import "config";
+@import 'config';
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 section {
-  background-image: url("../images/bg-mobile.svg");
+  background-image: url('../images/bg-mobile.svg');
   background-color: $bg-color;
   background-repeat: no-repeat;
   width: 100vw;
@@ -26,7 +26,7 @@ header {
 
 .image {
   background-repeat: no-repeat;
-  background-image: url("../images/illustration-mockups.svg");
+  background-image: url('../images/illustration-mockups.svg');
   height: 30vh;
   background-size: contain;
   margin: 18px 35px;
@@ -75,7 +75,7 @@ header {
 
 @media screen and (min-width: 768px) {
   section {
-    background-image: url("../images/bg-desktop.svg");
+    background-image: url('../images/bg-desktop.svg');
     display: grid;
     height: 78vh;
     grid-template-columns: 1fr 1fr;
@@ -137,5 +137,13 @@ header {
       border-color: $btn-hover-color;
       cursor: pointer;
     }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: hsl(228, 45%, 44%);
   }
 }
